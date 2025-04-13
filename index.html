@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google-site-verification" content="jJL54lQCMwHCrWYVFsmd-nHwykIhUAqi0K7hkC2G-J4" />
   <title>Epic Stucco & Stone</title>
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header>
@@ -16,18 +16,21 @@
     <nav>
       <a href="#">Home</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section classhttps="intro">
-      <h2>Welcome to Epic Stucco & Stone</h2>
-      <p>Expert stucco and stone work in Calgary and surrounding areas. Quality you can trust.</p>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Calgary Stucco & Stone Experts</h2>
+      <p>Over 15 years of commercial and residential experience in stucco and stone installation, repair, and restoration.</p>
+      <a class="cta-btn" href="#quote">Get a Free Quote</a>
+    </div>
+  </section>
 
+  <main>
     <section class="services" id="services">
       <h2>Our Services</h2>
       <div class="service-list">
@@ -46,51 +49,38 @@
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
-      <h2>Project Gallery</h2>
-      <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="Project 1" />
-        <img src="images/gallery2.jpg" alt="Project 2" />
-        <img src="images/gallery3.jpg" alt="Project 3" />
-        <img src="images/gallery4.jpg" alt="Project 4" />
-      </div>
-      <p style="text-align:center; font-size:14px;">(Replace with your real stucco project images)</p>
+    <section class="about" id="about">
+      <h2>Who We Are</h2>
+      <p>Epic Stucco & Stone is a trusted name in Calgary, providing top-notch stucco and stone services for over 15 years. We pride ourselves on quality workmanship, honest pricing, and outstanding results.</p>
     </section>
 
     <section class="testimonials" id="testimonials">
       <h2>What Our Clients Say</h2>
       <div class="testimonial-list">
-        <blockquote>
-          "Amazing stucco job. Very professional and clean finish! Highly recommended."
-          <footer>- Sarah from NW Calgary</footer>
-        </blockquote>
-        <blockquote>
-          "Firas and his team did a great job on our exterior walls. Looks brand new."
-          <footer>- Jason K.</footer>
-        </blockquote>
+        <div class="testimonial">
+          <p>“Firas and his team did an amazing job on our house. The stucco looks brand new!”</p>
+          <strong>– Sarah T.</strong>
+        </div>
+        <div class="testimonial">
+          <p>“Professional, reliable, and affordable. Highly recommend Epic Stucco!”</p>
+          <strong>– Mike D.</strong>
+        </div>
+        <div class="testimonial">
+          <p>“Great work, clean finish, and honest service. We’re very happy with the results.”</p>
+          <strong>– Leila M.</strong>
+        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>📍 Calgary and surrounding areas</p>
-      <p>🕒 Mon to Sun – 12:00 AM to 11:00 PM</p>
-      <p>📞 Call Firas: <a href="tel:+14034089421">403-408-9421</a></p>
-      <p>📧 Email: <a href="mailto:epicstuccostone@gmail.com">epicstuccostone@gmail.com</a></p>
-      <p>💬 <a class="whatsapp" href="https://wa.me/14034089421?text=Hi%20I%27m%20interested%20in%20your%20stucco%20services" target="_blank">Chat on WhatsApp</a></p>
-      <form class="quote-form" onsubmit="return false;">
-        <input type="text" placeholder="Your Name" required />
-        <input type="tel" placeholder="Your Phone" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <a class="whatsapp" href="https://wa.me/14034089421?text=Hi%20Firas%2C%20I%20want%20a%20quote%20for%20stucco." target="_blank">Request a Quote</a>
+    <section class="quote" id="quote">
+      <h2>Get a Free Quote Now!</h2>
+      <form action="https://wa.me/14034089421" target="_blank" class="quote-form">
+        <input type="text" placeholder="Name" required />
+        <input type="tel" placeholder="Phone" required />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send on WhatsApp</button>
       </form>
-    </section>
-
-    <section class="map">
-      <h2>Our Location</h2>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10072.891622982991!2d-114.0719!3d51.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371700d1f6a59f9%3A0x1cdd5c5eb0e9cb07!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1617743244881!5m2!1sen!2sca" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
     </section>
   </main>
 
