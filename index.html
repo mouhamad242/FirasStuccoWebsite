@@ -75,10 +75,10 @@
   <!-- Quote Form -->
   <section class="quote-form box-style fade-in" id="quote">
     <div class="section-header">Request a Free Quote</div>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
+    <form action="https://formspree.io/f/xgvaqara" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
     <a href="https://wa.me/14034089421" target="_blank" class="whatsapp-link">💬 Chat on WhatsApp</a>
@@ -99,7 +99,7 @@
     <p>&copy; 2025 Epic Stucco & Stone Ltd. All Rights Reserved.</p>
   </footer>
 
-  <!-- Scroll Animations -->
+  <!-- Animations -->
   <script>
     const sections = document.querySelectorAll(".fade-in, .slide-up");
     const observer = new IntersectionObserver((entries) => {
