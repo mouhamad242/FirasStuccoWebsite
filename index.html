@@ -8,9 +8,9 @@
 </head>
 <body>
 
-  <header>
+  <header class="fade-in">
     <h1 class="site-title">Epic Stucco & Stone</h1>
-    <img src="images%20gallery/logo.png" alt="Logo" class="logo">
+    <img src="images%20gallery/logo.png" alt="Epic Logo" class="logo">
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -19,53 +19,55 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero fade-in">
     <h2>Calgary Stucco & Stone Experts</h2>
-    <p>Over 15 years of commercial and residential experience in stucco and stone installation, repair, and restoration.</p>
-    <a href="#quote" class="btn">Get a Free Quote</a>
-    <a href="https://wa.me/14034089421" class="btn whatsapp" target="_blank">WhatsApp</a>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul class="service-list">
-      <li>Stucco Installation</li>
-      <li>Stone Veneer</li>
-      <li>Stucco Repair</li>
-      <li>Foundations Parging</li>
-      <li>Restoration/Repair</li>
-      <li>EIFS Exterior Stucco</li>
-      <li>Exterior Painting</li>
-      <li>Chimney Repair</li>
-    </ul>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>For over 15 years, Epic Stucco has delivered high-quality stucco services across Calgary and surrounding areas. We're known for top-tier craftsmanship, customer satisfaction, and trustworthiness. We’ve worked on major homes and commercial projects and always put clients first.</p>
-
-    <h3>Our Mission</h3>
-    <p>To enhance homes with durable, efficient stucco & EIFS finishes using high-grade materials and skilled workmanship.</p>
-
-    <h3>Our Values</h3>
-    <ul>
-      <li><strong>Quality:</strong> No shortcuts — ever.</li>
-      <li><strong>Integrity:</strong> Honest, upfront communication.</li>
-      <li><strong>Innovation:</strong> Modern tools, timeless results.</li>
-      <li><strong>Customer Satisfaction:</strong> 5-star results every time.</li>
-    </ul>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images%20gallery/gallery1.jpg" alt="Gallery Image 1">
-      <img src="images%20gallery/gallery2.jpg" alt="Gallery Image 2">
-      <img src="images%20gallery/gallery3.jpg" alt="Gallery Image 3">
+    <p>Over 15 years of expert work in stucco, stone veneer, and restoration. Elevate your property's look & durability.</p>
+    <div class="hero-btns">
+      <a href="#quote" class="btn">Get a Free Quote</a>
+      <a href="https://wa.me/14034089421" class="btn whatsapp" target="_blank">WhatsApp</a>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="services" class="section slide-up">
+    <h2>Our Services</h2>
+    <div class="card-grid">
+      <div class="card">Stucco Installation</div>
+      <div class="card">Stone Veneer</div>
+      <div class="card">Stucco Repair</div>
+      <div class="card">Foundations Parging</div>
+      <div class="card">Restoration / Repair</div>
+      <div class="card">EIFS Exterior Stucco</div>
+      <div class="card">Exterior Painting</div>
+      <div class="card">Chimney Repair</div>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Us</h2>
+    <p>For over 15 years, Epic Stucco has delivered top-quality stucco and stone work across Calgary and surrounding areas. We’re trusted for our clean results, honesty, and lasting finishes — on both homes and commercial properties.</p>
+    <div class="values">
+      <h3>Our Mission</h3>
+      <p>To enhance homes using modern EIFS and stone systems with quality materials and skilled craftsmanship.</p>
+      <h3>Our Values</h3>
+      <ul>
+        <li><strong>Quality:</strong> No shortcuts. Only excellence.</li>
+        <li><strong>Integrity:</strong> Clear, honest service from day one.</li>
+        <li><strong>Innovation:</strong> New techniques. Timeless results.</li>
+        <li><strong>Customer Satisfaction:</strong> We make you proud of your property.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="section fade-in">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images%20gallery/gallery1.jpg" alt="Gallery 1">
+      <img src="images%20gallery/gallery2.jpg" alt="Gallery 2">
+      <img src="images%20gallery/gallery3.jpg" alt="Gallery 3">
+    </div>
+  </section>
+
+  <section id="contact" class="section slide-up">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> 403-891-5343</p>
     <p><strong>Email:</strong> epicstuccostone@gmail.com</p>
@@ -75,19 +77,25 @@
       width="100%" height="300" style="border:0;" allowfullscreen></iframe>
   </section>
 
-  <footer>
+  <footer class="fade-in">
     <p>&copy; 2025 Epic Stucco & Stone Ltd.</p>
   </footer>
 
   <script>
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        target.scrollIntoView({ behavior: "smooth" });
+    const sections = document.querySelectorAll(".fade-in, .slide-up");
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
       });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
     });
   </script>
+
 </body>
 </html>
