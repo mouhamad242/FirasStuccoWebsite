@@ -1,120 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Epic Stucco & Stone</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header>
-    <img src="images/logo.png" alt="Logo" class="logo" />
-    <h1 class="brand-name">Epic Stucco & Stone</h1>
-  </header>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f6f2;
+  color: #3b2d22;
+  scroll-behavior: smooth;
+}
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h2>Transforming Homes with Precision & Style</h2>
-      <p>Stucco. Stone. Restoration. Calgary’s Trusted Experts for 15+ Years.</p>
-      <a href="#quote" class="quote-btn">Get a Free Quote</a>
-    </div>
-  </section>
+/* Header */
+header {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
 
-  <!-- Intro -->
-  <section class="section fade-in">
-    <h2>Calgary Stucco Repair</h2>
-    <p>Our skilled professionals provide unmatched commercial and residential stucco repair solutions. Count on us to ensure your surfaces are restored to perfection.</p>
-    <ul class="intro-points">
-      <li>✔️ Over 15 Years of Experience</li>
-      <li>✔️ Zero Hidden Fees</li>
-      <li>✔️ Exceptional Value at Unbeatable Prices</li>
-    </ul>
-  </section>
+.logo {
+  height: 60px;
+}
 
-  <!-- Services -->
-  <section class="section slide-up" id="services">
-    <h2>Our Services</h2>
-    <div class="card-grid">
-      <div class="card">Stucco Installation</div>
-      <div class="card">Stone Veneer</div>
-      <div class="card">Stucco Repair</div>
-      <div class="card">Foundations Parging</div>
-      <div class="card">Restoration / Repair</div>
-      <div class="card">EIFS Exterior Stucco</div>
-      <div class="card">Exterior Painting</div>
-      <div class="card">Chimney Repair</div>
-    </div>
-  </section>
+.brand-name {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  flex: 1;
+}
 
-  <!-- About -->
-  <section class="section fade-in" id="about">
-    <h2>What Makes Us Epic?</h2>
-    <p>For over 15 years, Epic Stucco & Stone has been delivering high-quality stucco services in Calgary, Airdrie, Chestermere, Cochrane, Okotoks and beyond. Our commitment to quality, our passion for precision, and our unmatched customer care have made us one of the most trusted names in the business.</p>
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("images%20gallery/hero-bg.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    <h3>Our Mission</h3>
-    <p>To enhance the beauty and durability of your home with superior stucco and stone systems, using premium materials and expert craftsmanship.</p>
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  z-index: 1;
+}
 
-    <h3>Our Values</h3>
-    <ul class="values-list">
-      <li><strong>Quality:</strong> We never compromise on the quality of our work.</li>
-      <li><strong>Integrity:</strong> We believe in honest, transparent communication.</li>
-      <li><strong>Innovation:</strong> We stay ahead with the latest tools & techniques.</li>
-      <li><strong>Customer Satisfaction:</strong> Your happiness is our priority.</li>
-    </ul>
-  </section>
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeIn 2s ease forwards;
+}
 
-  <!-- Gallery -->
-  <section class="section fade-in" id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery-grid">
-      <img src="images%20gallery/gallery1.jpg" alt="Project 1">
-      <img src="images%20gallery/gallery2.jpg" alt="Project 2">
-      <img src="images%20gallery/gallery3.jpg" alt="Project 3">
-    </div>
-  </section>
+.hero-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
-  <!-- Contact -->
-  <section class="section slide-up" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 403-891-5343</p>
-    <p><strong>Email:</strong> epicstuccostone@gmail.com</p>
-    <p><strong>Location:</strong> 190 Rundleview Close NE, Calgary, Alberta</p>
-    <p><strong>Hours:</strong> Mon–Sun: 7:00 AM – 8:00 PM</p>
-    <iframe src="https://www.google.com/maps?q=190%20Rundleview%20Close%20NE%20Calgary&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
-  </section>
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
 
-  <!-- Quote -->
-  <section class="quote section fade-in" id="quote">
-    <h2>Get a Free Quote</h2>
-    <form action="mailto:epicstuccostone@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" placeholder="Name" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Quote</button>
-    </form>
-    <a href="https://wa.me/14034089421" target="_blank" class="whatsapp-link">💬 Chat on WhatsApp</a>
-  </section>
+.quote-btn {
+  background-color: #ffd700;
+  color: #3b2d22;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
-  <footer>
-    <p>&copy; 2025 Epic Stucco & Stone Ltd. All Rights Reserved.</p>
-  </footer>
+.quote-btn:hover {
+  background-color: #f4c400;
+  transform: scale(1.05);
+}
 
-  <script>
-    // Scroll reveal
-    const sections = document.querySelectorAll(".fade-in, .slide-up");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.1 });
+/* Quote Section */
+.quote {
+  padding: 60px 20px;
+  background: #fffdf7;
+  text-align: center;
+}
 
-    sections.forEach(section => observer.observe(section));
-  </script>
+.quote h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
 
-</body>
-</html>
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #3b2d22;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2a1e17;
+}
+
+.whatsapp-link {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  color: #25D366;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #3b2d22;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
