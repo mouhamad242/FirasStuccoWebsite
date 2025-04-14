@@ -1,151 +1,71 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f2eee7;
+  background-color: #f4f1ec;
   color: #3b2d22;
 }
 
 header {
   background-color: #3b2d22;
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
 }
 
-.top-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.site-title {
+  margin: 0;
+  font-size: 28px;
 }
 
 .logo {
-  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 60px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+nav {
+  margin-top: 10px;
 }
 
-nav ul li {
-  position: relative;
-}
-
-nav ul li a {
+nav a {
   color: white;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f2eee7;
-  color: #3b2d22;
-  padding: 10px;
-  z-index: 1;
-  width: 250px;
-  border-radius: 5px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content li {
-  margin-bottom: 10px;
 }
 
 .hero {
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
-  color: #3b2d22;
+  background-color: #e9e4db;
 }
 
-.hero-btns {
-  margin-top: 20px;
-}
-
-.cta-btn,
-.whatsapp-btn {
-  padding: 10px 20px;
-  border: none;
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
   background-color: #3b2d22;
   color: white;
   text-decoration: none;
-  margin-right: 10px;
   border-radius: 5px;
 }
 
-.mission {
-  padding: 50px 20px;
+.whatsapp {
+  background-color: #25D366;
 }
 
-.mission ul {
-  text-align: left;
-  max-width: 600px;
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-.quote {
-  background-color: #e5dfd3;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.quote form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.quote input,
-.quote textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.quote button {
-  background-color: #3b2d22;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.testimonials {
-  padding: 50px 20px;
-  background-color: #fffaf3;
-}
-
-.testimonial-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.testimonial {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 280px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.gallery {
-  padding: 50px 20px;
-  background-color: #f6f1e7;
-  text-align: center;
+.service-list {
+  columns: 2;
+  list-style: square;
+  margin-top: 20px;
 }
 
 .gallery-grid {
@@ -153,25 +73,18 @@ nav ul li a {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .gallery-grid img {
   width: 300px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.contact {
-  padding: 40px 20px;
-  background-color: #fff;
-  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 footer {
   background-color: #3b2d22;
   color: white;
-  padding: 20px;
   text-align: center;
-  font-size: 14px;
+  padding: 20px;
+  margin-top: 40px;
 }
