@@ -2,121 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="jJL54lQCMwHCrWYVFsmd-nHwykIhUAqi0K7hkC2G-J4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Epic Stucco & Stone</title>
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <div class="top-header">
-      <img src="images/logo.png" alt="Epic Logo" class="logo"/>
-      <h1>Epic Stucco & Stone</h1>
-    </div>
+    <h1 class="site-title">Epic Stucco & Stone</h1>
+    <img src="images%20gallery/logo.png" alt="Logo" class="logo">
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-content">
-            <li>Stucco Installation</li>
-            <li>Stone Veneer</li>
-            <li>Stucco Repair</li>
-            <li>Foundations Parging</li>
-            <li>Restoration/Repair</li>
-            <li>EIFS Exterior Stucco</li>
-            <li>Exterior Painting</li>
-            <li>Chimney Repair</li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">About</a>
-          <ul class="dropdown-content about-dropdown">
-            <li>
-              <p>For over 15 years, Epic Stucco has delivered high-quality stucco services in Calgary and surrounding areas. Known for top-tier craftsmanship and customer satisfaction, we’ve worked on projects of all sizes with pride, professionalism, and reliability.</p>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Calgary Stucco & Stone Experts</h2>
     <p>Over 15 years of commercial and residential experience in stucco and stone installation, repair, and restoration.</p>
-    <div class="hero-btns">
-      <a class="cta-btn" href="#quote">Get a Free Quote</a>
-      <a class="whatsapp-btn" href="https://wa.me/14034089421" target="_blank">WhatsApp</a>
-    </div>
+    <a href="#quote" class="btn">Get a Free Quote</a>
+    <a href="https://wa.me/14034089421" class="btn whatsapp" target="_blank">WhatsApp</a>
   </section>
 
-  <section class="mission">
-    <h2>CERTIFIED STUCCO CONTRACTOR IN CALGARY</h2>
-    <div class="values">
-      <h3>Our Mission</h3>
-      <p>To enhance homes with high-quality stucco and EIFS systems using premium materials, expert techniques, and true craftsmanship.</p>
-
-      <h3>Our Values</h3>
-      <ul>
-        <li><strong>Quality:</strong> No compromise in finishes.</li>
-        <li><strong>Integrity:</strong> Transparent communication with every client.</li>
-        <li><strong>Innovation:</strong> Always improving methods and tools.</li>
-        <li><strong>Customer Satisfaction:</strong> We make sure you’re 100% happy.</li>
-      </ul>
-    </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul class="service-list">
+      <li>Stucco Installation</li>
+      <li>Stone Veneer</li>
+      <li>Stucco Repair</li>
+      <li>Foundations Parging</li>
+      <li>Restoration/Repair</li>
+      <li>EIFS Exterior Stucco</li>
+      <li>Exterior Painting</li>
+      <li>Chimney Repair</li>
+    </ul>
   </section>
 
-  <section class="quote" id="quote">
-    <h2>Get a Free Quote Now</h2>
-    <form action="mailto:epicstuccostone@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" placeholder="Name" required />
-      <input type="tel" placeholder="Phone" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>For over 15 years, Epic Stucco has delivered high-quality stucco services across Calgary and surrounding areas. We're known for top-tier craftsmanship, customer satisfaction, and trustworthiness. We’ve worked on major homes and commercial projects and always put clients first.</p>
+
+    <h3>Our Mission</h3>
+    <p>To enhance homes with durable, efficient stucco & EIFS finishes using high-grade materials and skilled workmanship.</p>
+
+    <h3>Our Values</h3>
+    <ul>
+      <li><strong>Quality:</strong> No shortcuts — ever.</li>
+      <li><strong>Integrity:</strong> Honest, upfront communication.</li>
+      <li><strong>Innovation:</strong> Modern tools, timeless results.</li>
+      <li><strong>Customer Satisfaction:</strong> 5-star results every time.</li>
+    </ul>
   </section>
 
-  <section class="testimonials" id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <p>"Amazing job! Our home looks stunning. Clean, fast, and friendly team!"</p>
-        <strong>– Omar B.</strong>
-      </div>
-      <div class="testimonial">
-        <p>"Truly professional work. Stucco repair was flawless. Highly recommend!"</p>
-        <strong>– Samantha K.</strong>
-      </div>
-      <div class="testimonial">
-        <p>"They went above and beyond. We’ll use them again for sure!"</p>
-        <strong>– David M.</strong>
-      </div>
-    </div>
-  </section>
-
-  <section class="gallery" id="gallery">
-    <h2>Our Work</h2>
+  <section id="gallery">
+    <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="images/gallery/gallery1.jpg" alt="Gallery Image 1" />
-      <img src="images/gallery/gallery2.jpg" alt="Gallery Image 2" />
-      <img src="images/gallery/gallery3.jpg" alt="Gallery Image 3" />
+      <img src="images%20gallery/gallery1.jpg" alt="Gallery Image 1">
+      <img src="images%20gallery/gallery2.jpg" alt="Gallery Image 2">
+      <img src="images%20gallery/gallery3.jpg" alt="Gallery Image 3">
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact Details</h2>
+  <section id="contact">
+    <h2>Contact Us</h2>
     <p><strong>Phone:</strong> 403-891-5343</p>
     <p><strong>Email:</strong> epicstuccostone@gmail.com</p>
-    <p><strong>Address:</strong> 190 Rundleview Close NE, Calgary, Alberta</p>
-    <p><strong>Opening Hours:</strong> Mon – Sun: 7:00 AM – 8:00 PM</p>
-    <iframe src="https://www.google.com/maps?q=190%20Rundleview%20Close%20NE,%20Calgary&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p><strong>Address:</strong> 190 Rundleview Close NE, Calgary</p>
+    <p><strong>Hours:</strong> Mon – Sun: 7:00 AM – 8:00 PM</p>
+    <iframe src="https://www.google.com/maps?q=190%20Rundleview%20Close%20NE%20Calgary&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen></iframe>
   </section>
 
   <footer>
-    <p>&copy; 2025 Epic Stucco & Stone Ltd. All rights reserved.</p>
+    <p>&copy; 2025 Epic Stucco & Stone Ltd.</p>
   </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
 </body>
 </html>
