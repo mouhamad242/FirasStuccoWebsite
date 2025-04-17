@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Epic Stucco & Stone | Calgary Stucco Experts</title>
 
-  <!-- ✅ Google Search Console -->
+  <!-- Google Search Console -->
   <meta name="google-site-verification" content="YDqGhnmtd33onxFMPjOFKoBvppIWEEax1OKfjAwyB_k" />
-
-  <!-- ✅ Canonical link for Google SEO -->
   <link rel="canonical" href="https://epicstuccoandstone.ca" />
-
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -26,10 +23,10 @@
     </ul>
   </nav>
 
-  <!-- Header with Transition -->
-  <header class="fade-in">
-    <img src="images/logo.png" alt="Epic Logo" class="logo" />
-  </header>
+  <!-- Logo on top left -->
+  <div class="logo-top-left fade-in">
+    <img src="images/logo.png" alt="Epic Logo" />
+  </div>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
@@ -72,11 +69,13 @@
     </div>
   </section>
 
-  <!-- Gallery Preview -->
+  <!-- Our Work Auto Switch -->
   <section class="section box-style fade-in" id="gallery">
     <div class="section-header">Our Work</div>
-    <img src="images%20gallery/gallery1.jpg" alt="Featured Project" class="featured-img">
-    <a href="gallery.html" class="view-gallery-btn">View Full Gallery →</a>
+    <img id="switching-image" src="images%20gallery/gallery1.jpg" alt="Gallery" class="featured-img">
+    <div style="margin-top: 20px;">
+      <a href="gallery.html" class="view-gallery-btn">View Full Gallery →</a>
+    </div>
   </section>
 
   <!-- Quote Form -->
@@ -94,7 +93,7 @@
   <!-- Contact -->
   <section class="section box-style slide-up" id="contact">
     <div class="section-header">Contact Us</div>
-    <p><strong>Phone:</strong> 403-408-9421</p>
+    <p><strong>Phone:</strong> 403-891-5343</p>
     <p><strong>Email:</strong> epicstuccostone@gmail.com</p>
     <p><strong>Location:</strong> 190 Rundleview Close NE, Calgary</p>
     <p><strong>Hours:</strong> Mon–Sun: 7:00 AM – 8:00 PM</p>
@@ -106,7 +105,7 @@
     <p>&copy; 2025 Epic Stucco & Stone Ltd. All Rights Reserved.</p>
   </footer>
 
-  <!-- Animations -->
+  <!-- Animations + Image Switcher -->
   <script>
     const sections = document.querySelectorAll(".fade-in, .slide-up");
     const observer = new IntersectionObserver((entries) => {
@@ -116,8 +115,27 @@
         }
       });
     }, { threshold: 0.1 });
-
     sections.forEach(section => observer.observe(section));
+
+    // Gallery Image Switcher
+    const images = [
+      "images%20gallery/gallery1.jpg",
+      "images%20gallery/gallery2.jpg",
+      "images%20gallery/gallery3.jpg",
+      "images%20gallery/gallery4.jpg",
+      "images%20gallery/gallery5.jpg",
+      "images%20gallery/gallery6.jpg",
+      "images%20gallery/gallery7.jpg",
+      "images%20gallery/gallery8.jpg",
+      "images%20gallery/gallery9.jpg",
+      "images%20gallery/gallery10.jpg",
+      "images%20gallery/gallery11.jpg"
+    ];
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      document.getElementById('switching-image').src = images[current];
+    }, 1000); // 1 second
   </script>
 
 </body>
